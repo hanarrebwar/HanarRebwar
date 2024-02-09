@@ -1,7 +1,7 @@
 /* Change color of box */
 
 .box {
-  background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+  background-color: rgb(253, 154, 220);
   border-radius: 25px;
 }
 .image {
