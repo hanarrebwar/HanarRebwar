@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="img/multitasking.png" type="image/x-icon" />
+    <title>John</title>  <!-- change title  -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <!-- Main Content -->
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light sticky-top rounded-3"
+      style="background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);" 
+    ><!-- change header color -->
+      <div class="container ms-10">
+        <div class="d-flex align-items-center">
+          <a href="index.html">
+            <!-- change face Image -->
+            <img
+              src="img/face.jpg"
+              alt="Rawa"
+              style="width: 75px; border-radius: 50%; object-fit: fill"
+              class=""
+            />
+          </a> <!-- change name -->
+          <a class="navbar-brand ml-0 text-light ms-2" style="font-weight: 900;" href="index.html"
+            >john doe</a 
+          > 
+        </div>
+        <div class="ms-auto">
+
+          <button class="btn btn-outline-light me-4" onclick="darkMode()">
+            <i
+              id="darkModeIcon"
+              class="fa-regular fa-sun"
+              style="display: none"
+            ></i>
+            <i id="lightModeIcon" class="fa-regular fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <!-- First Section -->
+      <section
+        class="text-light p-5 text-center text-sm-start home mt-3 mx-md-3 transition-fade flex-grow-1 box d-flex justify-content-center"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="img/hand.png" style="width: 50px" />
+              <h1>
+                <span style="color: #2a6bac; font-weight: bolder">Hey </span>Im
+                John<br /><!-- change name  !!! -->
+              </h1>
+              <p class="lead" style="font-weight: bolder">
+                Im a Software Engineering Student <br />At
+                <a target="_blank" href="https://www.uniq.edu.iq/"
+                  ><img
+                    class="Qaiwan"
+                    src="https://www.uniq.edu.iq/qiu.png"
+                    alt="QaiwanUNI"
+                /></a>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eum impedit suscipit iste nisi non, hic veniam aliquid aperiam molestiae!
+              </p>
+              <!-- change href -->
+              <a
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=9647701732539&amp;text= Hi"
+                class="btn btn-primary btn-lg btn-bold"
+                ><span class="fw-bolder" style="font-size: x-large"
+                  >Contact Me</span
+                ></a
+              >
+            </div>
+            <div class="col-lg-6 row mt-4 ms-1">
+              <!-- Chnage card Background-image -->
+              <div
+                class="card rounded-5 mx-auto"
+                style="
+                  max-width: 22rem;
+                  background-color: pink;
+                  border: 10px solid;
+                "
+              >
+              <!-- Change poster -->
+                <img
+                  style="object-fit: cover"
+                  src="img/Poster.jpg"
+                  class="card-img-top cardImg PosterImg mt-3 rounded-5"
+                  alt="Poster"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h1 class="card-title">Poster</h1>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-secondary mb-2 dropdown-toggle text-warning fw-bolder"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Prepared By
+                    </button>
+                    <ul class="dropdown-menu bg-secondary-subtle">
+                      <!-- Change Names -->
+                      <li><a class="dropdown-item fw-bolder">John Doe</a></li>
+                      <li>
+                        <a class="dropdown-item fw-bolder">John Doe</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item fw-bolder">John Doe</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item fw-bolder">John Doe</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="d-flex flex-column mt-auto">
+                    <div class="mb-2">
+                      <button
+                        type="button"
+                        class="btn btn-success fw-bolder btn-block"
+                        data-bs-toggle="modal"
+                        data-bs-target="#viewModal2"
+                      >
+                        View
+                        <i
+                          class="fa-regular fa-eye"
+                          style="margin-left: 5px"
+                        ></i>
+                      </button>
+                    </div>
+                    <div>
+                      <!-- Change poster -->
+                      <a
+                        href="img/Poster.jpg"
+                        download="Poster"
+                        class="btn btn-primary fw-bolder btn-block"
+                        >Download
+                        <i class="fas fa-download" style="margin-left: 5px"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="modal fade"
+          id="viewModal2"
+          tabindex="-1"
+          aria-labelledby="viewModalLabel2"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="btn-close bg-danger"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <!-- Change poster -->
+                <img src="img/Poster.jpg" class="img-fluid" alt="Large View" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-white text-center justify-content-center mt-4 pb-5">
+      <div class="container-fluid">
+        <div class="row text-white align-items-center mt-3">
+          <div class="col-md-3 mx-auto mt-4">
+            <p>
+              <a target="_blank" href="https://www.uniq.edu.iq/">
+                <img class="Qaiwan2" src="https://www.uniq.edu.iq/qiu.png" alt="" />
+              </a>
+            </p>
+          </div>
+          <div class="col-md-6 mx-auto">
+            <div class="col-md-12">
+              <div class="d-flex justify-content-center gap-5">
+                <div>
+                  <!-- Change Href GitHub -->
+                  <a
+                    target="_blank"
+                    href="https://JohnDoe"
+                    class="text-white text-decoration-none"
+                  >
+                    <button class="btn btn-light">
+                      <i class="fa-brands fa-github"></i>
+                    </button>
+                  </a>
+                </div>
+                <div>
+                  <button
+                    class="btn btn-primary Email"
+                    onclick="copyToClipboard()"
+                    id="copyButton"
+                  >
+                  <!-- Change Href Email -->
+                    <a class="email-text" href="mailto:JohnDoeqiu@uniq.edu.iq">
+                      <i class="fa-regular fa-envelope"></i>
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mx-auto mt-4">
+            <p>
+              <a target="_blank" href="https://www.utm.my/">
+                <img
+                  class="Qaiwan"
+                  src="https://www.utm.my/wp-content/uploads/2022/10/LOGO-UTM.png"
+                  alt=""
+                />
+              </a>
+            </p>
+          </div>
+        </div>
+        <hr class="mt-4 mb-4" />
+        <div class="row text-center text-white">
+          <div class="col-md-3 mx-auto">
+            <p class="mb-0 fw-bolder">
+              &copy; 2024 JohnDoe Portfolio. All rights reserved.
+            </p><!-- Change Name -->
+          </div>
+          <div class="col-md-3 mx-auto">
+            <p class="mb-0 fw-bolder">
+              Designed by
+              <a  href="#"><span class="text-warning text-decoration-none">John</span></a><!-- Change Name -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

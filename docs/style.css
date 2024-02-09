@@ -1,0 +1,68 @@
+/* Change color of box */
+
+.box {
+  background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+  border-radius: 25px;
+}
+.image {
+  border-radius: 25px;
+}
+main {
+  flex: 1; 
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body fills the viewport height */
+  margin: 0; /* Remove default body margin */
+}
+
+footer {
+  background-color: #262323; /* Adjust background color */
+  color: #fff; 
+  padding: 20px; 
+  width: 100%;
+}
+
+
+.btn-bold {
+  font-weight: bold !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  max-width: none;
+  z-index: 1;
+}
+
+.fa-brands {
+  font-size: 20px;
+}
+
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImg {
+  height: 250px;
+  margin-top: 15px;
+}
+
+.Port {
+  border-radius: 15px;
+}
+
+.email-text {
+  color: #fff;
+}
+.Qaiwan {
+  width: 100px;
+}
+
+.Qaiwan2 {
+  width: 150px;
+}
